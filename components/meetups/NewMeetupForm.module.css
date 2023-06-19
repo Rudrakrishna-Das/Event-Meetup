@@ -36,10 +36,11 @@
   border: 1px solid #12007a;
   border-radius: 4px;
   font-weight: bold;
+  transition: all 0.5s;
 }
 
 .actions button:hover,
 .actions button:active {
-  background-color: #250ea5;
-  border-color: #250ea5;
+  background-color: #331ea8;
+  border-color: #331ea8;
 }
