@@ -4,14 +4,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #77002e;
+  background-color: #001c77;
   padding: 0 10%;
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 900;
   color: white;
-  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 .header ul {
@@ -29,9 +33,13 @@
 .header a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: #fcb8d2;
+  color: #bcd3fd;
+  transition: all 0.5s;
 }
 
+.logo:hover {
+  transform: scale(1.5);
+}
 .header a:hover,
 .header a:active,
 .header a.active {

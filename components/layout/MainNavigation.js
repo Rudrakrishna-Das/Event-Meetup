@@ -1,10 +1,19 @@
 import Link from "next/link";
 import classes from "./MainNavigation.module.css";
+import { useRouter } from "next/router";
 
 function MainNavigation() {
+  const router = useRouter();
+  const goToHome = () => {
+    router.push("/");
+  };
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>Event For Meetups</div>
+      <div>
+        <button className={classes.logo} onClick={goToHome}>
+          Meetups
+        </button>
+      </div>
       <nav>
         <ul>
           <li>
