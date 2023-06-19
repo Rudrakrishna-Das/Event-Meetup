@@ -1,0 +1,21 @@
+.details {
+  text-align: center;
+}
+
+.details img {
+  width: 100%;
+}
+
+.back {
+  cursor: pointer;
+  padding: 1% 4%;
+  background-color: white;
+  border: 1px solid #77002e;
+  border-radius: 6px;
+  transition: all 0.5s;
+}
+
+.back:hover {
+  background-color: #77002e;
+  color: white;
+}
