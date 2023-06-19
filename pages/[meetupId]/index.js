@@ -29,7 +29,7 @@ export const getStaticPaths = async () => {
   const meetupData = await meetupCollections.find({}, { _id: 1 }).toArray();
   client.close();
   return {
-    fallback: false,
+    fallback: "blocking",
     paths: meetupData.map((meetup) => ({
       params: {
         meetupId: meetup._id.toString(), //  key name coming from dynamic folder name
