@@ -10,13 +10,15 @@ const MeetupDetails = (props) => {
   return (
     <section className={Classes.details}>
       <img src={props.image} alt={props.title} />
-      <h1>{props.title}</h1>
-      <address>{props.address}</address>
-      <p>{props.description}</p>
+      <div className={Classes.description}>
+        <h1>{props.title}</h1>
+        <address>{props.address}</address>
+        <p>{props.description}</p>
 
-      <button className={Classes.back} onClick={goingBackHandler}>
-        Back
-      </button>
+        <button className={Classes.back} onClick={goingBackHandler}>
+          Back
+        </button>
+      </div>
     </section>
   );
 };
